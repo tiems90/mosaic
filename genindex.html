@@ -94,7 +94,7 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">Mosaic v0.2.1</span>
+          <span class="md-header-nav__topic">Mosaic v0.3.4</span>
           <span class="md-header-nav__topic"> Index </span>
         </div>
       </div>
@@ -179,7 +179,7 @@
       
     </a>
     <a href="index.html"
-       title="Mosaic">Mosaic v0.2.1</a>
+       title="Mosaic">Mosaic v0.3.4</a>
   </label>
     <div class="md-nav__source">
       <a href="https://github.com/databrickslabs/mosaic/" title="Go to repository" class="md-source" data-md-source="github">
@@ -229,6 +229,13 @@
     <li class="md-nav__item">
     
     
+      <a href="usage/grid-indexes-bng.html" class="md-nav__link">BNG - British National Grid</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
       <a href="usage/automatic-sql-registration.html" class="md-nav__link">Automatic SQL registration</a>
       
     
@@ -236,7 +243,7 @@
     <li class="md-nav__item">
     
     
-      <a href="usage/kepler.html" class="md-nav__link">Kepler visializations</a>
+      <a href="usage/kepler.html" class="md-nav__link">Kepler visualizations</a>
       
     
     </li>
@@ -264,7 +271,7 @@
     <li class="md-nav__item">
     
     
-      <a href="api/spatial-indexing.html" class="md-nav__link">Spatial indexing</a>
+      <a href="api/spatial-indexing.html" class="md-nav__link">Spatial grid indexing</a>
       
     
     </li>
@@ -314,6 +321,7 @@
 <div class="genindex-jumpbox">
  <a href="#B"><strong>B</strong></a>
  | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
  | <a href="#M"><strong>M</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#S"><strong>S</strong></a>
@@ -328,15 +336,25 @@
       <ul>
         <li><a href="api/spatial-functions.html#flatten_polygons">flatten_polygons()</a>
 </li>
+        <li><a href="api/spatial-indexing.html#grid_longlatascellid">grid_longlatascellid()</a>
+</li>
+        <li><a href="api/spatial-indexing.html#grid_pointascellid">grid_pointascellid()</a>
+</li>
+        <li><a href="api/spatial-indexing.html#grid_polyfill">grid_polyfill()</a>
+</li>
+        <li><a href="api/spatial-indexing.html#grid_tessellate">grid_tessellate()</a>
+</li>
+        <li><a href="api/spatial-indexing.html#grid_tessellateexplode">grid_tessellateexplode()</a>
+</li>
         <li><a href="api/spatial-indexing.html#mosaic_explode">mosaic_explode()</a>
 </li>
-        <li><a href="api/spatial-indexing.html#id0">mosaicfill()</a>
+        <li><a href="api/spatial-indexing.html#mosaicfill">mosaicfill()</a>
 </li>
         <li><a href="api/spatial-indexing.html#point_index_geom">point_index_geom()</a>
 </li>
         <li><a href="api/spatial-indexing.html#point_index_lonlat">point_index_lonlat()</a>
 </li>
-        <li><a href="api/spatial-indexing.html#id1">polyfill()</a>
+        <li><a href="api/spatial-indexing.html#polyfill">polyfill()</a>
 </li>
         <li><a href="api/spatial-functions.html#st_area">st_area()</a>
 </li>
@@ -360,9 +378,13 @@
 </li>
         <li><a href="api/spatial-functions.html#st_convexhull">st_convexhull()</a>
 </li>
+        <li><a href="api/spatial-functions.html#st_difference">st_difference()</a>
+</li>
         <li><a href="api/spatial-functions.html#st_distance">st_distance()</a>
 </li>
         <li><a href="api/spatial-functions.html#st_dump">st_dump()</a>
+</li>
+        <li><a href="api/spatial-functions.html#st_envelope">st_envelope()</a>
 </li>
         <li><a href="api/spatial-functions.html#st_geometrytype">st_geometrytype()</a>
 </li>
@@ -402,11 +424,19 @@
 </li>
         <li><a href="api/spatial-functions.html#st_setsrid">st_setsrid()</a>
 </li>
+        <li><a href="api/spatial-functions.html#st_simplify">st_simplify()</a>
+</li>
         <li><a href="api/spatial-functions.html#st_srid">st_srid()</a>
 </li>
         <li><a href="api/spatial-functions.html#st_transform">st_transform()</a>
 </li>
         <li><a href="api/spatial-functions.html#st_translate">st_translate()</a>
+</li>
+        <li><a href="api/spatial-functions.html#st_unaryunion">st_unaryunion()</a>
+</li>
+        <li><a href="api/spatial-functions.html#st_union">st_union()</a>
+</li>
+        <li><a href="api/spatial-aggregations.html#st_union_agg">st_union_agg()</a>
 </li>
         <li><a href="api/spatial-functions.html#st_xmax">st_xmax()</a>
 </li>
@@ -437,6 +467,49 @@
   </ul></td>
 </tr></table>
 
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    grid_longlatascellid()
+
+      <ul>
+        <li><a href="api/spatial-indexing.html#grid_longlatascellid">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    grid_pointascellid()
+
+      <ul>
+        <li><a href="api/spatial-indexing.html#grid_pointascellid">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    grid_polyfill()
+
+      <ul>
+        <li><a href="api/spatial-indexing.html#grid_polyfill">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    grid_tessellate()
+
+      <ul>
+        <li><a href="api/spatial-indexing.html#grid_tessellate">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    grid_tessellateexplode()
+
+      <ul>
+        <li><a href="api/spatial-indexing.html#grid_tessellateexplode">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -453,7 +526,7 @@
     mosaicfill()
 
       <ul>
-        <li><a href="api/spatial-indexing.html#id0">built-in function</a>
+        <li><a href="api/spatial-indexing.html#mosaicfill">built-in function</a>
 </li>
       </ul></li>
   </ul></td>
@@ -482,7 +555,7 @@
     polyfill()
 
       <ul>
-        <li><a href="api/spatial-indexing.html#id1">built-in function</a>
+        <li><a href="api/spatial-indexing.html#polyfill">built-in function</a>
 </li>
       </ul></li>
   </ul></td>
@@ -569,6 +642,13 @@
 </li>
       </ul></li>
       <li>
+    st_difference()
+
+      <ul>
+        <li><a href="api/spatial-functions.html#st_difference">built-in function</a>
+</li>
+      </ul></li>
+      <li>
     st_distance()
 
       <ul>
@@ -580,6 +660,13 @@
 
       <ul>
         <li><a href="api/spatial-functions.html#st_dump">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    st_envelope()
+
+      <ul>
+        <li><a href="api/spatial-functions.html#st_envelope">built-in function</a>
 </li>
       </ul></li>
       <li>
@@ -638,8 +725,6 @@
         <li><a href="api/spatial-predicates.html#st_intersects">built-in function</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     st_intersects_aggregate()
 
@@ -647,6 +732,8 @@
         <li><a href="api/spatial-aggregations.html#st_intersects_aggregate">built-in function</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     st_isvalid()
 
@@ -718,6 +805,13 @@
 </li>
       </ul></li>
       <li>
+    st_simplify()
+
+      <ul>
+        <li><a href="api/spatial-functions.html#st_simplify">built-in function</a>
+</li>
+      </ul></li>
+      <li>
     st_srid()
 
       <ul>
@@ -736,6 +830,27 @@
 
       <ul>
         <li><a href="api/spatial-functions.html#st_translate">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    st_unaryunion()
+
+      <ul>
+        <li><a href="api/spatial-functions.html#st_unaryunion">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    st_union()
+
+      <ul>
+        <li><a href="api/spatial-functions.html#st_union">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    st_union_agg()
+
+      <ul>
+        <li><a href="api/spatial-aggregations.html#st_union_agg">built-in function</a>
 </li>
       </ul></li>
       <li>

@@ -94,7 +94,7 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">Mosaic v0.2.1</span>
+          <span class="md-header-nav__topic">Mosaic v0.3.4</span>
           <span class="md-header-nav__topic"> Documentation </span>
         </div>
       </div>
@@ -186,7 +186,7 @@
       
     </a>
     <a href="#"
-       title="Mosaic">Mosaic v0.2.1</a>
+       title="Mosaic">Mosaic v0.3.4</a>
   </label>
     <div class="md-nav__source">
       <a href="https://github.com/databrickslabs/mosaic/" title="Go to repository" class="md-source" data-md-source="github">
@@ -236,6 +236,13 @@
     <li class="md-nav__item">
     
     
+      <a href="usage/grid-indexes-bng.html" class="md-nav__link">BNG - British National Grid</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
       <a href="usage/automatic-sql-registration.html" class="md-nav__link">Automatic SQL registration</a>
       
     
@@ -243,7 +250,7 @@
     <li class="md-nav__item">
     
     
-      <a href="usage/kepler.html" class="md-nav__link">Kepler visializations</a>
+      <a href="usage/kepler.html" class="md-nav__link">Kepler visualizations</a>
       
     
     </li>
@@ -271,7 +278,7 @@
     <li class="md-nav__item">
     
     
-      <a href="api/spatial-indexing.html" class="md-nav__link">Spatial indexing</a>
+      <a href="api/spatial-indexing.html" class="md-nav__link">Spatial grid indexing</a>
       
     
     </li>
@@ -374,13 +381,19 @@
 <li class="toctree-l2"><a class="reference internal" href="usage/grid-indexes.html#Final-notes">Final notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="usage/grid-indexes-bng.html">BNG - British National Grid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage/grid-indexes-bng.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/grid-indexes-bng.html#configuring-bng">Configuring BNG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/grid-indexes-bng.html#coordinate-reference-system">Coordinate Reference System</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="usage/automatic-sql-registration.html">Automatic SQL registration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usage/automatic-sql-registration.html#pre-requisites">Pre-requisites</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage/automatic-sql-registration.html#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage/automatic-sql-registration.html#testing">Testing</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="usage/kepler.html">Kepler visializations</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="usage/kepler.html">Kepler visualizations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usage/kepler.html#Examples">Examples</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="usage/kepler.html#Download-example-shapes">Download example shapes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage/kepler.html#Plot-geometries-from-Spark-dataset">Plot geometries from Spark dataset</a><ul>
@@ -422,6 +435,7 @@
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-convexhull">st_convexhull</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-distance">st_distance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-dump">st_dump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-envelope">st_envelope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-geometrytype">st_geometrytype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-hasvalidcoordinates">st_hasvalidcoordinates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-intersection">st_intersection</a></li>
@@ -435,6 +449,10 @@
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-srid">st_srid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-transform">st_transform</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-translate">st_translate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-simplify">st_simplify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-difference">st_difference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-union">st_union</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-unaryunion">st_unaryunion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-xmax">st_xmax</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-xmin">st_xmin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-ymax">st_ymax</a></li>
@@ -443,12 +461,17 @@
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-functions.html#st-zmin">st_zmin</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="api/spatial-indexing.html">Spatial indexing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#mosaic-explode">mosaic_explode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#mosaicfill">mosaicfill</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#point-index-geom">point_index_geom</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#point-index-lonlat">point_index_lonlat</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#polyfill">polyfill</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/spatial-indexing.html">Spatial grid indexing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#grid-longlatascellid">grid_longlatascellid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#grid-pointascellid">grid_pointascellid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#grid-polyfill">grid_polyfill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#grid-tessellate">grid_tessellate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#grid-tessellateexplode">grid_tessellateexplode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#mosaic-explode-deprecated">mosaic_explode [Deprecated]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#mosaicfill-deprecated">mosaicfill [Deprecated]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#point-index-geom-deprecated">point_index_geom [Deprecated]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#point-index-lonlat-deprecated">point_index_lonlat [Deprecated]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-indexing.html#polyfill-deprecated">polyfill [Deprecated]</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api/spatial-predicates.html">Spatial predicates</a><ul>
@@ -459,6 +482,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api/spatial-aggregations.html">Spatial aggregation functions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-aggregations.html#st-intersects-aggregate">st_intersects_aggregate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/spatial-aggregations.html#st-intersection-aggregate">st_intersection_aggregate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/spatial-aggregations.html#st-union-agg">st_union_agg</a></li>
 </ul>
 </li>
 </ul>
