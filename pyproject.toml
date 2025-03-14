@@ -33,7 +33,8 @@ raster = [
 ]
 route = [
     "cloudpickle ~=2.2.1",
-    "osmnx <2.0,>=1.9.4"
+    "osmnx <2.0,>=1.9.4",
+    "osmium ~= 4.0.2"
 ]
 all = ["databricks-spatial[viz,raster,route]"]
 
@@ -42,6 +43,7 @@ requires = [
     "cloudpickle ~=2.2.1",
     "keplergl == 0.3.2",
     "osmnx <2.0,>=1.9.4",
+    "osmium ~= 4.0.2",
     "pyspark <4.0,>=3.5",
     "rasterio <1.4,>=1.3.11",
     "polars[numpy,pandas,pyarrow]==1.10.0",

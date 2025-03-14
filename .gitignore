@@ -4,3 +4,6 @@
 /.venv/
 /.idea/
 /scripts/dev/upload-wheel.sh
+/.vscode/
+/target/
+
